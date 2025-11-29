@@ -12,10 +12,11 @@ namespace ProjetUNO
         public static const int JAUNE = 3;
         public static const int VERT = 4;
 
-        private int couleur { get; };
+        protected int couleur { get; };
 
         public abstract void Jouer(ref Jeu jeu);
 
+        // peut etre as besoin d'être abstract vu que toutes les cartes partagent le meme code ici
         public abstract bool PeutJouer(Carte topPile);
 
         public abstract void Afficher();
