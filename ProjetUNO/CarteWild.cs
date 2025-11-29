@@ -9,7 +9,7 @@ namespace ProjetUNO
         }
 
         public override bool PeutJouer(Carte topPile){
-
+            throw new NotImplementedException();
         }
 
         public override void Afficher(){
