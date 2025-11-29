@@ -14,10 +14,10 @@ namespace ProjetUNO
 
         private int couleur { get; };
 
-        abstract void Jouer(ref Jeu jeu);
+        public abstract void Jouer(ref Jeu jeu);
 
-        abstract bool PeutJouer(Carte topPile);
+        public abstract bool PeutJouer(Carte topPile);
 
-        abstract void Afficher();
+        public abstract void Afficher();
     }
 }
