@@ -8,6 +8,7 @@ namespace ProjetUNO
         {
             jeu.FairePigerProchain(2);
             jeu.JouerCarte(this);
+            jeu.PasserTourProchain();
         }
 
         public override bool PeutJouer(Carte topPile)

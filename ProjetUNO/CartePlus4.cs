@@ -11,6 +11,7 @@ namespace ProjetUNO
             ChoisirCouleur();
             jeu.FairePigerProchain(4);
             jeu.JouerCarte(this);
+            jeu.PasserTourProchain();
         }
 
         public override bool PeutJouer(Carte topPile)
