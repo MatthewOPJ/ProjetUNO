@@ -14,7 +14,7 @@ namespace ProjetUNO
         private int sensDuTour;
 
 
-        public void PasserToutProchain()
+        public void PasserTourProchain()
         {
             
         }
