@@ -7,14 +7,17 @@ namespace ProjetUNO
         public override void Jouer(ref Jeu jeu)
         {
             jeu.InverserTour();
+            jeu.JouerCarte(this);
         }
 
-        public override bool PeutJouer(Carte topPile){
-            throw new NotImplementedException();
+        public override bool PeutJouer(Carte topPile)
+        {
+            return topPile.couleur == couleur || topPile.GetType() == typeof(CarteChangerSens);    
         }
 
-        public override void Afficher(){
-
+        public override void Afficher()
+        {
+            Console.Write(couleur); 
         }
     }
 }
