@@ -7,16 +7,17 @@ namespace ProjetUNO
         public override void Jouer(ref Jeu jeu)
         {
             jeu.FairePigerProchain(2);
+            jeu.JouerCarte(this);
         }
 
         public override bool PeutJouer(Carte topPile)
         {
-            return true;
+            return topPile.Equals(couleur);
         }
 
         public override void Afficher()
         {
-
+            Console.Write(couleur + "+2");
         }
     }
 }

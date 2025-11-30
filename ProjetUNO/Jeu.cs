@@ -39,6 +39,12 @@ namespace ProjetUNO
             
         }
 
+        //Nous permet d'ajouter une carte sur le top de la pile de jeu.
+        public void JouerCarte(Carte carte)
+        {
+            
+        }
+
         // autres fonctions plus petites
     }
 }

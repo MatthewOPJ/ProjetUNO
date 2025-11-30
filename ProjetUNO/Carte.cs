@@ -6,13 +6,13 @@ namespace ProjetUNO
     {
         // enum mais on a pas vu les enums
         // plus lisible comme ca
-        public const int WILD = 0;
-        public const int ROUGE = 1;
-        public const int BLEU = 2;
-        public const int JAUNE = 3;
-        public const int VERT = 4;
+        //public const int WILD = 0;
+        //public const int ROUGE = 1;
+        //public const int BLEU = 2;
+        //public const int JAUNE = 3;
+        //public const int VERT = 4;
 
-        protected int couleur { get; }
+        protected internal char couleur;
 
         public abstract void Jouer(ref Jeu jeu);
 
