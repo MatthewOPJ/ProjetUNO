@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:cartewild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\carteplus4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:carteplus4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\carteplus2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:carteplus2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\carteplus4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:carteplus4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\carteplus2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:carteplus2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,13 +50,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T19:55:31.029Z",
               "EditorCaption": ""
@@ -67,9 +67,9 @@
               "Title": "CarteWild.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CarteWild.cs",
               "RelativeDocumentMoniker": "CarteWild.cs",
-              "ToolTip": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CarteWild.cs",
-              "RelativeToolTip": "CarteWild.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAA+wBsAAABqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CarteWild.cs*",
+              "RelativeToolTip": "CarteWild.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T19:36:50.536Z",
               "EditorCaption": ""
@@ -88,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CartePlus4.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CartePlus4.cs",
               "RelativeDocumentMoniker": "CartePlus4.cs",
               "ToolTip": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CartePlus4.cs",
               "RelativeToolTip": "CartePlus4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T19:22:38.879Z",
               "EditorCaption": ""
@@ -113,20 +113,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "CartePlus2.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CartePlus2.cs",
               "RelativeDocumentMoniker": "CartePlus2.cs",
               "ToolTip": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CartePlus2.cs",
               "RelativeToolTip": "CartePlus2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T19:15:43.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Carte.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Carte.cs",
               "RelativeDocumentMoniker": "Carte.cs",
@@ -134,12 +134,11 @@
               "RelativeToolTip": "Carte.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T19:13:44.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T19:13:44.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Jeu.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Jeu.cs",
               "RelativeDocumentMoniker": "Jeu.cs",
@@ -147,8 +146,7 @@
               "RelativeToolTip": "Jeu.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwCkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T19:02:00.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T19:02:00.77Z"
             },
             {
               "$type": "Document",
@@ -160,8 +158,7 @@
               "RelativeToolTip": "Joueur.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T19:00:19.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T19:00:19.482Z"
             }
           ]
         }

@@ -31,8 +31,10 @@ namespace ProjetUNO
             
         }
 
-        public override void Jouer(ref Jeu jeu){
-
+        public override void Jouer(ref Jeu jeu)
+        {
+            ChoisirCouleur();
+            jeu.JouerCarte(this);
         }
 
         public override bool PeutJouer(Carte topPile)
@@ -40,8 +42,9 @@ namespace ProjetUNO
             return true;
         }
 
-        public override void Afficher(){
-
+        public override void Afficher()
+        {
+            Console.Write(couleur);
         }
     }
 }

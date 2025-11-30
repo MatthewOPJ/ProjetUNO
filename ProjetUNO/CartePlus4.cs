@@ -8,6 +8,7 @@ namespace ProjetUNO
 
         public override void Jouer(ref Jeu jeu)
         {
+            ChoisirCouleur();
             jeu.FairePigerProchain(4);
             jeu.JouerCarte(this);
         }
@@ -19,7 +20,7 @@ namespace ProjetUNO
 
         public override void Afficher()
         {
-
+            Console.Write(couleur + "+4");
         }
     }
 }
