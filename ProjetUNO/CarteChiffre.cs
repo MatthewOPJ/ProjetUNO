@@ -4,25 +4,28 @@ namespace ProjetUNO
 {
     internal class CarteChiffre : Carte
     {
-        private int chiffre { get; }
+        private int chiffre;
 
-        public override void Jouer(ref Jeu jeu){
-
+        public override void Jouer(ref Jeu jeu)
+        {
+            jeu.JouerCarte(this);
         }
 
         public override bool PeutJouer(Carte topPile)
         {
-            throw new NotImplementedException();
+            return topPile.couleur == couleur;
         }
 
         // pas sur si cete fonction là va marcher comme je le pense...
         // sinon on changera
-        public bool PeutJouer(CarteChiffre topPile){
-            throw new NotImplementedException();
+        public bool PeutJouer(CarteChiffre topPile)
+        {
+            return topPile.chiffre == chiffre || topPile.couleur == couleur;
         }
 
-        public override void Afficher(){
-
+        public override void Afficher()
+        {
+            Console.Write($"{couleur}{chiffre}");
         }
     }
 }

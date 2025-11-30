@@ -17,9 +17,18 @@ namespace ProjetUNO
 
         public void Piger(Carte carte)
         {
-            
+            paquetDeCartes.Add(carte);
         }
+        public void AfficherCartes()
+        {
+            Console.Write("Vos cartes sont: ");
 
+            foreach (Carte carte in paquetDeCartes)
+            {
+                carte.Afficher();
+                Console.Write(", ");
+            }
+        }
         // autres fonctions plus petites
         // demander input par exemple
     }
