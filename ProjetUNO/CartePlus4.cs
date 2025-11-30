@@ -16,8 +16,7 @@ namespace ProjetUNO
 
         public override bool PeutJouer(Carte topPile)
         {
-            return topPile.couleur == couleur || topPile.GetType() == typeof(CarteChangerSens);
-
+            return true;
         }
 
         public override void Afficher()
