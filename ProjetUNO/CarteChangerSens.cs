@@ -4,8 +4,9 @@ namespace ProjetUNO
 {
     internal class CarteChangerSens : Carte
     {
-        public override void Jouer(ref Jeu jeu){
-
+        public override void Jouer(ref Jeu jeu)
+        {
+            jeu.InverserTour();
         }
 
         public override bool PeutJouer(Carte topPile){

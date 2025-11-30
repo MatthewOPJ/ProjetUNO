@@ -4,8 +4,9 @@ namespace ProjetUNO
 {
     internal class CartePlus4 : Carte
     {
-        public override void Jouer(ref Jeu jeu){
-
+        public override void Jouer(ref Jeu jeu)
+        {
+            jeu.FairePigerProchain(4);
         }
 
         public override bool PeutJouer(Carte topPile){
