@@ -19,6 +19,6 @@ namespace ProjetUNO
         // peut etre as besoin d'être abstract vu que toutes les cartes partagent le meme code ici
         public abstract bool PeutJouer(Carte topPile);
 
-        public abstract void Afficher();
+        public abstract string GetCode();
     }
 }

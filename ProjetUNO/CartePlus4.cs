@@ -19,9 +19,9 @@ namespace ProjetUNO
             return true;
         }
 
-        public override void Afficher()
+        public override string GetCode()
         {
-            Console.Write(couleur + "+4");
+            return $"{couleur}+4";
         }
     }
 }

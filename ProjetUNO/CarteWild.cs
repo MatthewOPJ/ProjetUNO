@@ -10,12 +10,11 @@ namespace ProjetUNO
         {
             while (true)
             {
-
                 Console.WriteLine("Veuillez choisir une couleur: ");
                 Console.WriteLine("B pour Bleu.");
                 Console.WriteLine("J pour Jaune.");
                 Console.WriteLine("R pour Rouge.");
-                Console.WriteLine("V pour Vert.");
+                Console.WriteLine("V pour Vert.\n");
 
                 char choix = Console.ReadKey().KeyChar;
 
@@ -25,10 +24,9 @@ namespace ProjetUNO
                     case 'J':
                     case 'R':
                     case 'V': couleur = choix; Console.WriteLine(); return;
-                    default: Console.WriteLine(); Console.WriteLine("Entrée invalid."); break;
+                    default: Console.WriteLine("Entrée invalid."); break;
                 }
             }
-            
         }
 
         public override void Jouer(ref Jeu jeu)
@@ -42,9 +40,9 @@ namespace ProjetUNO
             return true;
         }
 
-        public override void Afficher()
+        public override string GetCode()
         {
-            Console.Write(couleur);
+            return $"{couleur}";
         }
     }
 }

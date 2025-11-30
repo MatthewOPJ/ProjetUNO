@@ -23,9 +23,14 @@ namespace ProjetUNO
             return topPile.chiffre == chiffre || topPile.couleur == couleur;
         }
 
-        public override void Afficher()
+        public override string GetCode()
         {
-            Console.Write($"{couleur}{chiffre}");
+            return $"{couleur}{chiffre}";
+        }
+
+        public int GetChiffre()
+        {
+            return chiffre;
         }
     }
 }

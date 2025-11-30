@@ -6,26 +6,158 @@ namespace ProjetUNO
     {
         private List<Carte> paquetDeCartes;
 
-        private string nom { get; }
+        public string nom;
 
 
-        // pas nécessairement besoin de topPile si on a deja accès au jeu...
+        // on sait que le joueur peut jouer
         public void Jouer(ref Jeu jeu, Carte topPile)
         {
-            
+            AfficherCartes();
+
+            string reponse;
+
+            // initialisée pour pas que le compilateur chiale
+            Carte carteAJouer = new CarteWild();
+
+            Console.WriteLine("Quel carte voulez-vous jouer? (Entrez son code)");
+
+            bool verifier = true;
+
+            do
+            {
+                reponse = Console.ReadLine();
+
+                foreach (Carte carte in paquetDeCartes)
+                {
+                    if(carte.GetCode() == reponse)
+                    {
+                        if (carte.PeutJouer(topPile))
+                        {
+                            carteAJouer = carte;
+                            verifier = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Cette carte ne peut pas être jouée");
+                        }
+                        break;
+                    }
+                }
+                Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
+
+            } while (verifier);
+
+            // jouer la carte
+
+            Console.WriteLine($"Vous jouez la carte {carteAJouer.GetCode()}");
+
+            paquetDeCartes.Remove(carteAJouer);
+            carteAJouer.Jouer(ref jeu);
+
+            Rejouer(ref jeu, carteAJouer);
+        }
+
+        public void Rejouer(ref Jeu jeu, Carte topPile)
+        {
+            if (!VeuxRejouer(topPile)) return;
+
+            string reponse;
+
+            AfficherCartes();
+
+            // initialisée pour pas que le compilateur chiale
+            Carte carteAJouer = new CarteWild();
+
+            Console.WriteLine("Quel carte voulez-vous jouer? (Entrez son code)");
+
+            bool verifier = true;
+
+            do
+            {
+                reponse = Console.ReadLine();
+
+                foreach (Carte carte in paquetDeCartes)
+                {
+                    if (carte.GetCode() == reponse)
+                    {
+                        if (carte.GetType() == typeof(CarteChiffre) &&
+                            ((CarteChiffre)carte).GetChiffre() == ((CarteChiffre)carteAJouer).GetChiffre())
+                        {
+                            verifier = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Cette carte ne peut pas être jouée");
+                        }
+                        break;
+                    }
+                }
+                Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
+
+            } while (verifier);
+
+            // jouer la carte
+
+            Console.WriteLine($"Vous jouez la carte {carteAJouer.GetCode()}");
+
+            paquetDeCartes.Remove(carteAJouer);
+            carteAJouer.Jouer(ref jeu);
+
+            Rejouer(ref jeu, carteAJouer);
+        }
+
+
+        private bool VeuxRejouer(Carte topPile)
+        {
+            if (topPile.GetType() != typeof(CarteChiffre)) return false;
+
+            bool peutRejouer = false;
+
+            foreach (Carte carte in paquetDeCartes)
+            {
+                if (carte.GetType() == typeof(CarteChiffre))
+                {
+                    if (((CarteChiffre)carte).GetChiffre() == ((CarteChiffre)topPile).GetChiffre())
+                    {
+                        peutRejouer = true;
+                    }
+                }
+            }
+
+            if (!peutRejouer) return false;
+
+            string reponse;
+
+            while (true)
+            {
+                Console.WriteLine("Voulez vous jouer une carte du même chiffre que la carte précédente ? O/N: ");
+                reponse = Console.ReadLine();
+
+                if (reponse.ToUpper() == "N")
+                {
+                    return true;
+                }
+                else if (reponse.ToUpper() == "O")
+                {
+                    break;
+                }
+                Console.WriteLine("Veuillez entrez 'O' ou 'N' (Oui ou Non)");
+            }
+            return false;
         }
 
         public void Piger(Carte carte)
         {
             paquetDeCartes.Add(carte);
         }
+
         public void AfficherCartes()
         {
             Console.Write("Vos cartes sont: ");
 
             foreach (Carte carte in paquetDeCartes)
             {
-                carte.Afficher();
+                Console.Write(carte.GetCode());
                 Console.Write(", ");
             }
         }

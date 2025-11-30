@@ -15,9 +15,9 @@ namespace ProjetUNO
             return topPile.couleur == couleur || topPile.GetType() == typeof(CarteChangerSens);    
         }
 
-        public override void Afficher()
+        public override string GetCode()
         {
-            Console.Write(couleur); 
+            return $"{couleur}CDS";
         }
     }
 }
