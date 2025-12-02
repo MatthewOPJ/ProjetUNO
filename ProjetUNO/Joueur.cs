@@ -70,31 +70,22 @@ namespace ProjetUNO
 
             Console.WriteLine("Quel carte voulez-vous jouer? (Entrez son code)");
 
-            bool verifier = true;
-
             do
             {
                 reponse = Console.ReadLine();
 
-                foreach (Carte carte in paquetDeCartes)
+                if (PeutRejouer(carteAJouer))
                 {
-                    if (carte.GetCode() == reponse)
-                    {
-                        if (carte.GetType() == typeof(CarteChiffre) &&
-                            ((CarteChiffre)carte).GetChiffre() == ((CarteChiffre)carteAJouer).GetChiffre())
-                        {
-                            verifier = false;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Cette carte ne peut pas être jouée");
-                        }
-                        break;
-                    }
+                    Console.WriteLine("Cette carte ne peut pas être jouée");
                 }
-                Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
+                else
+                {
+                    break;
+                }
+                // pas de deuxième message d'erreur, malheureusement
+                //Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
 
-            } while (verifier);
+            } while (true);
 
             // jouer la carte
 
@@ -106,38 +97,40 @@ namespace ProjetUNO
             Rejouer(ref jeu, carteAJouer);
         }
 
-
-        private bool VeuxRejouer(Carte topPile)
+        private bool PeutRejouer(Carte carteARejouer)
         {
-            if (topPile.GetType() != typeof(CarteChiffre)) return false;
-
-            bool peutRejouer = false;
+            if (carteARejouer.GetType() != typeof(CarteChiffre)) return false;
 
             foreach (Carte carte in paquetDeCartes)
             {
                 if (carte.GetType() == typeof(CarteChiffre))
                 {
-                    if (((CarteChiffre)carte).GetChiffre() == ((CarteChiffre)topPile).GetChiffre())
+                    if (((CarteChiffre)carte).chiffre == ((CarteChiffre)carteARejouer).chiffre)
                     {
-                        peutRejouer = true;
+                        return true;
                     }
                 }
             }
 
-            if (!peutRejouer) return false;
+            return false;
+        }
+
+        private bool VeuxRejouer(Carte topPile)
+        {
+            if (!PeutRejouer(topPile)) return false;
 
             string reponse;
 
             while (true)
             {
                 Console.WriteLine("Voulez vous jouer une carte du même chiffre que la carte précédente ? O/N: ");
-                reponse = Console.ReadLine();
+                reponse = Console.ReadLine().ToUpper();
 
-                if (reponse.ToUpper() == "N")
+                if (reponse == "N")
                 {
                     return true;
                 }
-                else if (reponse.ToUpper() == "O")
+                else if (reponse == "O")
                 {
                     break;
                 }

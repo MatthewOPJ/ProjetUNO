@@ -99,23 +99,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mphil\\.nuget\\packages\\": {},
+    "C:\\Users\\thoma_eft0ch8\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\ProjetUNO.csproj",
+      "projectUniqueName": "C:\\Users\\thoma_eft0ch8\\OneDrive\\Documents\\GitHub\\ProjetUNO\\ProjetUNO\\ProjetUNO.csproj",
       "projectName": "ProjetUNO",
-      "projectPath": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\ProjetUNO.csproj",
-      "packagesPath": "C:\\Users\\mphil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\obj\\",
+      "projectPath": "C:\\Users\\thoma_eft0ch8\\OneDrive\\Documents\\GitHub\\ProjetUNO\\ProjetUNO\\ProjetUNO.csproj",
+      "packagesPath": "C:\\Users\\thoma_eft0ch8\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thoma_eft0ch8\\OneDrive\\Documents\\GitHub\\ProjetUNO\\ProjetUNO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mphil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thoma_eft0ch8\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -124,6 +124,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -169,8 +170,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

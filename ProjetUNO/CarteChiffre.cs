@@ -4,7 +4,7 @@ namespace ProjetUNO
 {
     internal class CarteChiffre : Carte
     {
-        private int chiffre;
+        public int chiffre { get; private set; }
 
         public override void Jouer(ref Jeu jeu)
         {
@@ -26,11 +26,6 @@ namespace ProjetUNO
         public override string GetCode()
         {
             return $"{couleur}{chiffre}";
-        }
-
-        public int GetChiffre()
-        {
-            return chiffre;
         }
     }
 }
