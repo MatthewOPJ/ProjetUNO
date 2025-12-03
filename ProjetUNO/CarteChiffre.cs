@@ -6,6 +6,11 @@ namespace ProjetUNO
     {
         public int chiffre { get; private set; }
 
+        public CarteChiffre(char couleur, int chiffre) : base(couleur)
+        {
+            this.chiffre = chiffre;
+        }
+
         public override void Jouer(ref Jeu jeu)
         {
             jeu.JouerCarte(this);

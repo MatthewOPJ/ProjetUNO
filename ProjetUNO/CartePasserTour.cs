@@ -4,6 +4,11 @@ namespace ProjetUNO
 {
     internal class CartePasserTour : Carte
     {
+        public CartePasserTour(char couleur) : base(couleur)
+        {
+
+        }
+
         public override void Jouer(ref Jeu jeu)
         {
             jeu.JouerCarte(this);

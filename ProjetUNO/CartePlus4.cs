@@ -4,7 +4,10 @@ namespace ProjetUNO
 {
     internal class CartePlus4 : CarteWild
     {
+        public CartePlus4(char couleur) : base(couleur)
+        {
 
+        }
 
         public override void Jouer(ref Jeu jeu)
         {

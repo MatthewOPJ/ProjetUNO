@@ -4,6 +4,10 @@ namespace ProjetUNO
 {
     internal class CartePlus2 : Carte
     {
+        public CartePlus2(char couleur) : base(couleur)
+        {
+        }
+
         public override void Jouer(ref Jeu jeu)
         {
             jeu.FairePigerProchain(2);

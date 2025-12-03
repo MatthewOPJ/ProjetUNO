@@ -4,6 +4,11 @@ namespace ProjetUNO
 {
     internal class CarteChangerSens : Carte
     {
+        public CarteChangerSens(char couleur) : base(couleur)
+        {
+
+        }
+
         public override void Jouer(ref Jeu jeu)
         {
             jeu.InverserTour();

@@ -14,6 +14,11 @@ namespace ProjetUNO
 
         protected internal char couleur;
 
+        protected Carte(char couleur)
+        {
+            this.couleur = couleur;
+        }
+
         public abstract void Jouer(ref Jeu jeu);
 
         // peut etre as besoin d'être abstract vu que toutes les cartes partagent le meme code ici

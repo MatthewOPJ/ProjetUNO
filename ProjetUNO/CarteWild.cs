@@ -5,6 +5,12 @@ namespace ProjetUNO
 {
     internal class CarteWild : Carte
     {
+
+        public CarteWild(char couleur) : base(couleur)
+        {
+
+        }
+
         //Nous permet de choisir entre les 4 couleurs.
         public void ChoisirCouleur()
         {
