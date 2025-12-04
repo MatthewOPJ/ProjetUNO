@@ -22,12 +22,37 @@ namespace ProjetUNO
 
         public void PasserTourProchain()
         {
-            // entracte
+            tour = tour + 1;
+            Console.WriteLine($" Le tour de {joueurs[tour].nom} est bloqué. Appuyer sur une touche pour continuer");
+            Console.ReadKey();
         }
 
         public void FairePigerProchain(int nombreCartesAPiger)
         {
-            // entracte
+            int prochainTour = tour + 1;
+
+            for (int i = 0; i < nombreCartesAPiger; i++) 
+            {
+                if ( paquetDeCartes.Count == 0 ) 
+                {
+                    Carte carte = cartesJouees.Last();
+
+                    cartesJouees.RemoveAt(cartesJouees.Count - 1);
+                    paquetDeCartes = cartesJouees;
+                    cartesJouees.Clear();
+
+                    Random rand = new Random();
+                    
+                    for(int j = 0; j < paquetDeCartes.Count; j++)
+                    {
+                        int swap = rand.Next(j, paquetDeCartes.Count);
+
+                        Carte temp = paquetDeCartes[j];
+                        paquetDeCartes[j] = paquetDeCartes[swap];
+                        paquetDeCartes[swap] = temp;
+                    }
+                }
+            }
         }
 
         public void Jouer()
@@ -64,7 +89,7 @@ namespace ProjetUNO
         {
             sensDuTour = -sensDuTour;
             Console.WriteLine("Le tour est inversé. Appuyer sur une touche pour continuer");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         //Nous permet d'ajouter une carte sur le top de la pile de jeu.
