@@ -14,7 +14,7 @@ namespace ProjetUNO
         }
 
         // on sait que le joueur peut jouer
-        public void Jouer(ref Jeu jeu, Carte topPile)
+        public void Jouer(Jeu jeu, Carte topPile)
         {
             AfficherCartes();
 
@@ -56,12 +56,12 @@ namespace ProjetUNO
             Console.WriteLine($"Vous jouez la carte {carteAJouer.GetCode()}");
 
             paquetDeCartes.Remove(carteAJouer);
-            carteAJouer.Jouer(ref jeu);
+            carteAJouer.Jouer(jeu);
 
-            Rejouer(ref jeu, carteAJouer);
+            Rejouer(jeu, carteAJouer);
         }
 
-        public void Rejouer(ref Jeu jeu, Carte topPile)
+        public void Rejouer(Jeu jeu, Carte topPile)
         {
             if (!VeuxRejouer(topPile)) return;
 
@@ -96,9 +96,9 @@ namespace ProjetUNO
             Console.WriteLine($"Vous jouez la carte {carteAJouer.GetCode()}");
 
             paquetDeCartes.Remove(carteAJouer);
-            carteAJouer.Jouer(ref jeu);
+            carteAJouer.Jouer(jeu);
 
-            Rejouer(ref jeu, carteAJouer);
+            Rejouer(jeu, carteAJouer);
         }
 
         private bool PeutRejouer(Carte carteARejouer)
@@ -116,6 +116,18 @@ namespace ProjetUNO
                 }
             }
 
+            return false;
+        }
+
+        public bool Peutjouer(Carte topPile)
+        {
+            foreach (Carte carte in paquetDeCartes)
+            {
+                if (carte.PeutJouer(topPile))
+                {
+                    return true;
+                }
+            }
             return false;
         }
 
@@ -146,6 +158,11 @@ namespace ProjetUNO
         public void Piger(Carte carte)
         {
             paquetDeCartes.Add(carte);
+        }
+
+        public int GetNombreDeCartes()
+        {
+            return paquetDeCartes.Count;
         }
 
         public void AfficherCartes()

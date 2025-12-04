@@ -19,7 +19,7 @@ namespace ProjetUNO
             this.couleur = couleur;
         }
 
-        public abstract void Jouer(ref Jeu jeu);
+        public abstract void Jouer(Jeu jeu);
 
         // peut etre as besoin d'être abstract vu que toutes les cartes partagent le meme code ici
         public abstract bool PeutJouer(Carte topPile);

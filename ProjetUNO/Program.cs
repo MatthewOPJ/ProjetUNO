@@ -7,6 +7,8 @@ namespace ProjetUNO
         static void Main(string[] args)
         {
             AfficherRegles();
+            Jeu jeu = new Jeu();
+            jeu.Jouer();
         }
 
         static void AfficherRegles()
