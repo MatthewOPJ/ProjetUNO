@@ -9,6 +9,7 @@ namespace ProjetUNO
             AfficherRegles();
             Jeu jeu = new Jeu();
             jeu.Jouer();
+            Console.WriteLine("");
         }
 
         static void AfficherRegles()
