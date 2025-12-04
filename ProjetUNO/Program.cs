@@ -6,7 +6,8 @@ namespace ProjetUNO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Jeu jeu = new Jeu();
+
         }
     }
 }

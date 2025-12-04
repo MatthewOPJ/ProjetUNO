@@ -4,9 +4,9 @@ namespace ProjetUNO
 {
     internal class Jeu
     {
-        private List<Carte> paquetDeCartes;
-        private List<Carte> cartesJouees;
-        private List<Joueur> joueurs;
+        private List<Carte> paquetDeCartes = new List<Carte>();
+        private List<Carte> cartesJouees = new List<Carte>();
+        private List<Joueur> joueurs = new List<Joueur>();
 
         private int tour;
 
@@ -47,35 +47,73 @@ namespace ProjetUNO
 
             for (int i = 0; i < nombreJoueurs; i++)
             {
-                Console.WriteLine($"Entrez le nom du joueur {i + 1}");
+                Console.Write($"Entrez le nom du joueur {i + 1}: ");
                 nomJoueurs = Console.ReadLine();
                 
                 if (String.IsNullOrEmpty(nomJoueurs))
                 {
-
+                    Console.WriteLine("Veuillez rentrer un nom...");
+                    i--;
+                    continue;
                 }
+                joueurs.Add(new Joueur(nomJoueurs));
             }
         }
 
         public void InverserTour()
         {
-            // entracte
+            sensDuTour = -sensDuTour;
+            Console.WriteLine("Le tour est inversé. Appuyer sur une touche pour continuer");
+            Console.ReadLine();
         }
 
         //Nous permet d'ajouter une carte sur le top de la pile de jeu.
         public void JouerCarte(Carte carte)
         {
-            
+            cartesJouees.Add(carte);
         }
 
         private void CreerPaquet()
         {
-            
+            for (int i = 0; i < 4; i++)
+            {
+                paquetDeCartes.Add(new CarteWild('W'));
+                paquetDeCartes.Add(new CartePlus4('W'));
+            }
+
+            const string couleurs = "BJRV";
+
+            foreach (var couleur in couleurs)
+            {
+                paquetDeCartes.Add(new CartePlus2(couleur));
+                paquetDeCartes.Add(new CartePlus2(couleur));
+
+                paquetDeCartes.Add(new CarteChangerSens(couleur));
+                paquetDeCartes.Add(new CarteChangerSens(couleur));
+
+                paquetDeCartes.Add(new CartePasserTour(couleur));
+                paquetDeCartes.Add(new CartePasserTour(couleur));
+
+                paquetDeCartes.Add(new CarteChiffre(couleur, 0));
+
+                for (int i = 1; i <= 9; i++)
+                {
+                    paquetDeCartes.Add(new CarteChiffre(couleur, i));
+
+                }
+            }
         }
 
         private void DistribuerCartes()
         {
-            
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < joueurs.Count; j++)
+                {
+                    joueurs[j].Piger(paquetDeCartes.Last());
+                    paquetDeCartes.RemoveAt(paquetDeCartes.Count - 1);
+                }
+            }
         }
 
         // autres fonctions plus petites

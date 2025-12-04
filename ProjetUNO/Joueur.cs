@@ -8,6 +8,10 @@ namespace ProjetUNO
 
         public string nom;
 
+        public Joueur(string nom)
+        {
+            this.nom = nom;
+        }
 
         // on sait que le joueur peut jouer
         public void Jouer(ref Jeu jeu, Carte topPile)
