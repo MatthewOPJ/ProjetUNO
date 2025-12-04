@@ -17,7 +17,7 @@ namespace ProjetUNO
             string reponse;
 
             // initialisée pour pas que le compilateur chiale
-            Carte carteAJouer = new CarteWild();
+            Carte carteAJouer = new CarteWild('W');
 
             Console.WriteLine("Quel carte voulez-vous jouer? (Entrez son code)");
 
@@ -66,7 +66,7 @@ namespace ProjetUNO
             AfficherCartes();
 
             // initialisée pour pas que le compilateur chiale
-            Carte carteAJouer = new CarteWild();
+            Carte carteAJouer = new CarteWild('W');
 
             Console.WriteLine("Quel carte voulez-vous jouer? (Entrez son code)");
 

@@ -39,7 +39,22 @@ namespace ProjetUNO
 
         public void CreerJoueurs()
         {
-            
+            int nombreJoueurs = 3;
+
+            string nomJoueurs;
+
+            Console.WriteLine("Entrer le nom des joueurs: ");
+
+            for (int i = 0; i < nombreJoueurs; i++)
+            {
+                Console.WriteLine($"Entrez le nom du joueur {i + 1}");
+                nomJoueurs = Console.ReadLine();
+                
+                if (String.IsNullOrEmpty(nomJoueurs))
+                {
+
+                }
+            }
         }
 
         public void InverserTour()
