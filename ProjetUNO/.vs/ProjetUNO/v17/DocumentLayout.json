@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\mphil\\onedrive\\bureau\\projetuno\\projetuno\\projetuno\\carteplus4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -114,20 +114,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Jeu.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Jeu.cs",
               "RelativeDocumentMoniker": "Jeu.cs",
               "ToolTip": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Jeu.cs",
               "RelativeToolTip": "Jeu.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAuwDUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T19:02:00.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Joueur.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Joueur.cs",
               "RelativeDocumentMoniker": "Joueur.cs",
@@ -151,15 +151,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\mphil\\OneDrive\\Bureau\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T19:55:31.029Z"
+              "WhenOpened": "2025-11-30T19:55:31.029Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

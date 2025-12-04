@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetUNO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+677c71a2e7967cd907d56d9879f03c58fc7a39cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc3d7cd9c088602e55f7d441a0e4382097c01dc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetUNO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetUNO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
