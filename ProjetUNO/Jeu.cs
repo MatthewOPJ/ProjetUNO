@@ -5,6 +5,7 @@ namespace ProjetUNO
 {
     internal class Jeu
     {
+        //initialisation de nos listes
         private List<Carte> paquetDeCartes = new List<Carte>();
         private List<Carte> cartesJouees = new List<Carte>();
         private List<Joueur> joueurs = new List<Joueur>();
@@ -20,7 +21,7 @@ namespace ProjetUNO
         // soit 1 ou -1
         private int sensDuTour;
 
-
+        //fonction qui fait passer le tour du prochain joueur
         public void PasserTourProchain()
         {
             tour = GetProchainTour();
@@ -28,6 +29,7 @@ namespace ProjetUNO
             Console.ReadKey();
         }
 
+        //Fonction qui fait piger des cartes au prochain joueur
         public void FairePigerProchain(int nombreCartesAPiger)
         {
             int prochainTour = GetProchainTour();
@@ -110,6 +112,7 @@ namespace ProjetUNO
             }
         }
 
+        //Fonction qui retourne l'index du prochain joueur
         private int GetProchainTour()
         {
             int nouveauTour = tour + sensDuTour;
@@ -120,6 +123,7 @@ namespace ProjetUNO
             return nouveauTour;
         }
 
+        //Fonction qui melange le paquet de cartes avec un Random fait sur mesure
         private void MelangerPaquet()
         {
             Random rand = new Random();
@@ -134,6 +138,7 @@ namespace ProjetUNO
             }
         }
 
+        //Fonction qui cr��e les joueurs et demande leur nom
         public void CreerJoueurs()
         {
             int nombreJoueurs = 3;
@@ -157,6 +162,7 @@ namespace ProjetUNO
             }
         }
 
+        //Fonction qui inverse le sens du tour
         public void InverserTour()
         {
             sensDuTour = -sensDuTour;
@@ -170,6 +176,7 @@ namespace ProjetUNO
             cartesJouees.Add(carte);
         }
 
+        //Fonction qui crée le paquet de cartes. Il mets les 108 cartes dans la liste paquetDeCartes
         private void CreerPaquet()
         {
             for (int i = 0; i < 4; i++)
@@ -201,6 +208,7 @@ namespace ProjetUNO
             }
         }
 
+        //Fonction qui distribue 5 cartes a chaque joueur et met une carte chiffre sur la pile de jeu
         private void DistribuerCartes()
         {
             for (int i = 0; i < 5; i++)
