@@ -11,21 +11,18 @@ namespace ProjetUNO
             this.chiffre = chiffre;
         }
 
-        public override void Jouer(ref Jeu jeu)
+        public override void Jouer(Jeu jeu)
         {
             jeu.JouerCarte(this);
         }
 
         public override bool PeutJouer(Carte topPile)
         {
+            if (topPile.GetType() == typeof(CarteChiffre))
+            {
+                return ((CarteChiffre)topPile).chiffre == chiffre || topPile.couleur == couleur;
+            }
             return topPile.couleur == couleur;
-        }
-
-        // pas sur si cete fonction là va marcher comme je le pense...
-        // sinon on changera
-        public bool PeutJouer(CarteChiffre topPile)
-        {
-            return topPile.chiffre == chiffre || topPile.couleur == couleur;
         }
 
         public override string GetCode()

@@ -9,7 +9,7 @@ namespace ProjetUNO
 
         }
 
-        public override void Jouer(ref Jeu jeu)
+        public override void Jouer(Jeu jeu)
         {
             jeu.InverserTour();
             jeu.JouerCarte(this);

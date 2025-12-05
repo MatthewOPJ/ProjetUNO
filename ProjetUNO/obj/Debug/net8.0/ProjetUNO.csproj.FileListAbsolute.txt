@@ -1,0 +1,15 @@
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.AssemblyInfoInputs.cache
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.AssemblyInfo.cs
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.csproj.CoreCompileInputs.cache
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.sourcelink.json
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.dll
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\refint\ProjetUNO.dll
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.pdb
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\bin\Debug\net8.0\ProjetUNO.exe
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\bin\Debug\net8.0\ProjetUNO.deps.json
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\bin\Debug\net8.0\ProjetUNO.runtimeconfig.json
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\bin\Debug\net8.0\ProjetUNO.dll
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\bin\Debug\net8.0\ProjetUNO.pdb
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ProjetUNO.genruntimeconfig.cache
+C:\Users\thoma_eft0ch8\Source\Repos\PROJETUNO\ProjetUNO\obj\Debug\net8.0\ref\ProjetUNO.dll

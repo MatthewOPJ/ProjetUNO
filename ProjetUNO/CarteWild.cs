@@ -35,7 +35,7 @@ namespace ProjetUNO
             }
         }
 
-        public override void Jouer(ref Jeu jeu)
+        public override void Jouer(Jeu jeu)
         {
             ChoisirCouleur();
             jeu.JouerCarte(this);

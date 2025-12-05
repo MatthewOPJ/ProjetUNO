@@ -52,6 +52,7 @@ namespace ProjetUNO
 
         public void Jouer()
         {
+            MelangerPaquet();
             DistribuerCartes();
             
             sensDuTour = 1;
@@ -66,14 +67,16 @@ namespace ProjetUNO
 
                     Console.Write($"{joueurs[i].nom} possède {nombreCartes} cartes");
 
-                    if(nombreCartes == 1) Console.Write("(UNO!)");
+                    if(nombreCartes == 1) Console.Write(" (UNO!)");
 
                     Console.WriteLine();
                 }
 
-                Console.WriteLine($"C'est le tour de {joueurs[tour]}\n");
+                Console.WriteLine($"C'est le tour de {joueurs[tour].nom}\n");
 
-                if (joueurs[tour].Peutjouer(cartesJouees.Last()))
+                Console.WriteLine($"La carte au dessus de la pile est {cartesJouees.Last().GetCode()}\n");
+
+                if (!joueurs[tour].Peutjouer(cartesJouees.Last()))
                 {
                     joueurs[tour].AfficherCartes();
 
@@ -193,7 +196,7 @@ namespace ProjetUNO
                 for (int i = 1; i <= 9; i++)
                 {
                     paquetDeCartes.Add(new CarteChiffre(couleur, i));
-
+                    paquetDeCartes.Add(new CarteChiffre(couleur, i));
                 }
             }
         }
@@ -208,8 +211,16 @@ namespace ProjetUNO
                     paquetDeCartes.RemoveAt(paquetDeCartes.Count - 1);
                 }
             }
-        }
 
-        // autres fonctions plus petites
+            // tant que topPile est pas une CarteChiffre
+            Carte topPile = new CarteWild('W');
+
+            while(topPile.GetType() != typeof(CarteChiffre))
+            {
+                topPile = paquetDeCartes.Last();
+                cartesJouees.Add(topPile);
+                paquetDeCartes.RemoveAt(paquetDeCartes.Count - 1);
+            }
+        }
     }
 }

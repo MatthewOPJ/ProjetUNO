@@ -1,20 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OeIKQL5PHxk=",
-  "success": false,
-  "projectFilePath": "C:\\Users\\mamad\\Desktop\\POOP2\\ProjetUNO\\ProjetUNO\\ProjetUNO.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Package Microsoft.VisualStudio.Azure.Containers.Tools.Targets introuvable. Aucun package associé à cet ID n'existe dans la ou les sources suivantes\u00A0: Microsoft Visual Studio Offline Packages",
-      "projectPath": "C:\\Users\\mamad\\Desktop\\POOP2\\ProjetUNO\\ProjetUNO\\ProjetUNO.csproj",
-      "filePath": "C:\\Users\\mamad\\Desktop\\POOP2\\ProjetUNO\\ProjetUNO\\ProjetUNO.csproj",
-      "libraryId": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "dgSpecHash": "wITAjTMYQKc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thoma_eft0ch8\\Source\\Repos\\PROJETUNO\\ProjetUNO\\ProjetUNO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thoma_eft0ch8\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512"
+  ],
+  "logs": []
 }

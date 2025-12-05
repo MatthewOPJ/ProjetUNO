@@ -4,9 +4,9 @@ namespace ProjetUNO
 {
     internal class Joueur
     {
-        private List<Carte> paquetDeCartes;
+        private List<Carte> paquetDeCartes = new List<Carte>();
 
-        public string nom;
+        public string nom { get; private set; }
 
         public Joueur(string nom)
         {
@@ -47,7 +47,7 @@ namespace ProjetUNO
                         break;
                     }
                 }
-                Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
+                //Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
 
             } while (verifier);
 
@@ -74,22 +74,34 @@ namespace ProjetUNO
 
             Console.WriteLine("Quel carte voulez-vous jouer? (Entrez son code)");
 
+            bool verifier = true;
+
             do
             {
                 reponse = Console.ReadLine();
 
-                if (PeutRejouer(carteAJouer))
+                foreach (Carte carte in paquetDeCartes)
                 {
-                    Console.WriteLine("Cette carte ne peut pas être jouée");
-                }
-                else
-                {
-                    break;
+                    if (carte.GetType() != typeof(CarteChiffre)) continue;
+
+                    if (carte.GetCode() == reponse)
+                    {
+                        if (((CarteChiffre)carte).chiffre == ((CarteChiffre)topPile).chiffre)
+                        {
+                            carteAJouer = carte;
+                            verifier = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Cette carte ne peut pas être jouée");
+                        }
+                        break;
+                    }
                 }
                 // pas de deuxième message d'erreur, malheureusement
                 //Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
 
-            } while (true);
+            } while (verifier);
 
             // jouer la carte
 
@@ -111,6 +123,7 @@ namespace ProjetUNO
                 {
                     if (((CarteChiffre)carte).chiffre == ((CarteChiffre)carteARejouer).chiffre)
                     {
+                        carteARejouer = carte;
                         return true;
                     }
                 }
@@ -144,7 +157,7 @@ namespace ProjetUNO
 
                 if (reponse == "N")
                 {
-                    return true;
+                    return false;
                 }
                 else if (reponse == "O")
                 {
@@ -152,7 +165,7 @@ namespace ProjetUNO
                 }
                 Console.WriteLine("Veuillez entrez 'O' ou 'N' (Oui ou Non)");
             }
-            return false;
+            return true;
         }
 
         public void Piger(Carte carte)
