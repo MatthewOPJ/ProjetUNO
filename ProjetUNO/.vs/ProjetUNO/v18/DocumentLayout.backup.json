@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\tauza\\desktop\\projetuno\\projetuno\\projetuno\\jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\tauza\\desktop\\projetuno\\projetuno\\projetuno\\cartewild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:cartewild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\tauza\\desktop\\projetuno\\projetuno\\projetuno\\jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:jeu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|c:\\users\\tauza\\desktop\\projetuno\\projetuno\\projetuno\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BAB484C-3B47-4117-80BF-B81CE38BE410}|ProjetUNO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,24 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CarteWild.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CarteWild.cs",
               "RelativeDocumentMoniker": "CarteWild.cs",
               "ToolTip": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CarteWild.cs",
               "RelativeToolTip": "CarteWild.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T21:03:18.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CarteChangerSens.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CarteChangerSens.cs",
               "RelativeDocumentMoniker": "CarteChangerSens.cs",
@@ -75,12 +75,11 @@
               "RelativeToolTip": "CarteChangerSens.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAC8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T21:03:18.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T21:03:18.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CartePlus4.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CartePlus4.cs",
               "RelativeDocumentMoniker": "CartePlus4.cs",
@@ -88,12 +87,11 @@
               "RelativeToolTip": "CartePlus4.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAUwAsAAACIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T21:03:18.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T21:03:18.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CartePlus2.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CartePlus2.cs",
               "RelativeDocumentMoniker": "CartePlus2.cs",
@@ -101,12 +99,11 @@
               "RelativeToolTip": "CartePlus2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAACwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T21:03:18.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T21:03:18.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Carte.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Carte.cs",
               "RelativeDocumentMoniker": "Carte.cs",
@@ -114,12 +111,11 @@
               "RelativeToolTip": "Carte.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T21:03:18.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T21:03:18.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Joueur.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Joueur.cs",
               "RelativeDocumentMoniker": "Joueur.cs",
@@ -131,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CarteChiffre.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CarteChiffre.cs",
               "RelativeDocumentMoniker": "CarteChiffre.cs",
@@ -139,24 +135,24 @@
               "RelativeToolTip": "CarteChiffre.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T21:03:18.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T21:03:18.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Jeu.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Jeu.cs",
               "RelativeDocumentMoniker": "Jeu.cs",
               "ToolTip": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\Jeu.cs",
               "RelativeToolTip": "Jeu.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAzwC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAkwNIAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T21:03:18.648Z"
+              "WhenOpened": "2025-12-03T21:03:18.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CartePasserTour.cs",
               "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\ProjetUNO\\ProjetUNO\\ProjetUNO\\CartePasserTour.cs",
               "RelativeDocumentMoniker": "CartePasserTour.cs",
@@ -164,8 +160,7 @@
               "RelativeToolTip": "CartePasserTour.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAC7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T21:03:18.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T21:03:18.651Z"
             },
             {
               "$type": "Document",
