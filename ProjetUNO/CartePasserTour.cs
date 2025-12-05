@@ -9,6 +9,7 @@ namespace ProjetUNO
 
         }
 
+        //La carte se joue d'abords et ensuite le prochain joueur passe son tour
         public override void Jouer(Jeu jeu)
         {
             jeu.JouerCarte(this);
@@ -17,7 +18,7 @@ namespace ProjetUNO
 
         public override bool PeutJouer(Carte topPile)
         {
-            return topPile.couleur == couleur || topPile.GetType() == typeof(CartePasserTour);
+            return topPile.couleur == couleur || topPile.GetType() == typeof(CartePasserTour); //vérifie si la couleur est la même ou si la carte du dessus est aussi une carte Passer Tour
 
         }
 

@@ -35,6 +35,7 @@ namespace ProjetUNO
             }
         }
 
+        //Choisir la couleur avant de jouer la carte.
         public override void Jouer(Jeu jeu)
         {
             ChoisirCouleur();
@@ -43,7 +44,7 @@ namespace ProjetUNO
 
         public override bool PeutJouer(Carte topPile)
         {
-            return true;
+            return true; //Vue que c'est une carte Wild elle peut être jouée à tout moment
         }
 
         public override string GetCode()

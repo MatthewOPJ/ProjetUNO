@@ -20,7 +20,7 @@ namespace ProjetUNO
         {
             if (topPile.GetType() == typeof(CarteChiffre))
             {
-                return ((CarteChiffre)topPile).chiffre == chiffre || topPile.couleur == couleur;
+                return ((CarteChiffre)topPile).chiffre == chiffre || topPile.couleur == couleur; //vérification du chiffre ou de la couleur
             }
             return topPile.couleur == couleur;
         }
