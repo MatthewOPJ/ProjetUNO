@@ -9,6 +9,7 @@ namespace ProjetUNO
 
         }
 
+        //La carte inverse le sens du jeu et ensuite se joue normalement
         public override void Jouer(Jeu jeu)
         {
             jeu.InverserTour();
