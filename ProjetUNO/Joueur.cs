@@ -18,8 +18,6 @@ namespace ProjetUNO
         {
             AfficherCartes();
 
-            string reponse;
-
             // initialisée pour pas que le compilateur chiale
             Carte carteAJouer = new CarteWild('W');
 
@@ -29,7 +27,8 @@ namespace ProjetUNO
 
             do
             {
-                reponse = Console.ReadLine();
+                string reponse = Console.ReadLine();
+                bool carteDansMain = false;
 
                 foreach (Carte carte in paquetDeCartes)
                 {
@@ -44,10 +43,15 @@ namespace ProjetUNO
                         {
                             Console.WriteLine("Cette carte ne peut pas être jouée");
                         }
+                        carteDansMain = true;
                         break;
                     }
                 }
-                //Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
+
+                if (!carteDansMain)
+                {
+                    Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
+                }
 
             } while (verifier);
 
@@ -63,9 +67,10 @@ namespace ProjetUNO
 
         public void Rejouer(Jeu jeu, Carte topPile)
         {
-            if (!VeuxRejouer(topPile)) return;
-
-            string reponse;
+            if (!VeuxRejouer(topPile))
+            {
+                return;
+            }
 
             AfficherCartes();
 
@@ -78,7 +83,8 @@ namespace ProjetUNO
 
             do
             {
-                reponse = Console.ReadLine();
+                string reponse = Console.ReadLine();
+                bool carteDansMain = false;
 
                 foreach (Carte carte in paquetDeCartes)
                 {
@@ -95,12 +101,15 @@ namespace ProjetUNO
                         {
                             Console.WriteLine("Cette carte ne peut pas être jouée");
                         }
+                        carteDansMain = true;
                         break;
                     }
                 }
-                // pas de deuxième message d'erreur, malheureusement
-                //Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
 
+                if (!carteDansMain)
+                {
+                    Console.WriteLine("Vous n'avez pas cette carte dans votre main.");
+                }
             } while (verifier);
 
             // jouer la carte
@@ -115,7 +124,10 @@ namespace ProjetUNO
 
         private bool PeutRejouer(Carte carteARejouer)
         {
-            if (carteARejouer.GetType() != typeof(CarteChiffre)) return false;
+            if (carteARejouer.GetType() != typeof(CarteChiffre))
+            {
+                return false;
+            }
 
             foreach (Carte carte in paquetDeCartes)
             {
@@ -146,14 +158,15 @@ namespace ProjetUNO
 
         private bool VeuxRejouer(Carte topPile)
         {
-            if (!PeutRejouer(topPile)) return false;
-
-            string reponse;
+            if (!PeutRejouer(topPile))
+            {
+                return false;
+            }
 
             while (true)
             {
                 Console.WriteLine("Voulez vous jouer une carte du même chiffre que la carte précédente ? O/N: ");
-                reponse = Console.ReadLine().ToUpper();
+                string reponse = Console.ReadLine().ToUpper();
 
                 if (reponse == "N")
                 {
@@ -165,6 +178,7 @@ namespace ProjetUNO
                 }
                 Console.WriteLine("Veuillez entrez 'O' ou 'N' (Oui ou Non)");
             }
+
             return true;
         }
 

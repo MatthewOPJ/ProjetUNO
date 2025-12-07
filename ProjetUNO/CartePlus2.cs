@@ -11,8 +11,8 @@ namespace ProjetUNO
         public override void Jouer(Jeu jeu)
         {
             jeu.FairePigerProchain(2);
-            jeu.JouerCarte(this);
             jeu.PasserTourProchain();
+            jeu.JouerCarte(this);
         }
 
         public override bool PeutJouer(Carte topPile)

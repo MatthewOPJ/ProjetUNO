@@ -25,7 +25,8 @@ namespace ProjetUNO
         public void PasserTourProchain()
         {
             tour = GetProchainTour();
-            Console.WriteLine($" Le tour de {joueurs[tour].nom} est bloqué. Appuyer sur une touche pour continuer");
+            Console.Clear();
+            Console.WriteLine($" Le tour de {joueurs[GetProchainTour()].nom} est bloqué. Appuyez sur une touche pour continuer");
             Console.ReadKey();
         }
 
@@ -34,16 +35,14 @@ namespace ProjetUNO
         {
             int prochainTour = GetProchainTour();
 
+            Console.Clear();
+            Console.WriteLine($"Le joueur {joueurs[GetProchainTour()].nom} pige {nombreCartesAPiger}. Appuyer sur une touche pour continuer: ");
+            Console.ReadKey();
+
             for (int i = 0; i < nombreCartesAPiger; i++) 
             {
                 if (paquetDeCartes.Count == 0) 
                 {
-                    Carte carte = cartesJouees.Last();
-
-                    cartesJouees.RemoveAt(cartesJouees.Count - 1);
-                    paquetDeCartes = cartesJouees;
-                    cartesJouees.Clear();
-
                     MelangerPaquet();
                 }
 
@@ -69,7 +68,10 @@ namespace ProjetUNO
 
                     Console.Write($"{joueurs[i].nom} possède {nombreCartes} cartes");
 
-                    if(nombreCartes == 1) Console.Write(" (UNO!)");
+                    if (nombreCartes == 1)
+                    {
+                        Console.Write(" (UNO!)");
+                    }
 
                     Console.WriteLine();
                 }
@@ -90,6 +92,8 @@ namespace ProjetUNO
                     if (cartePigee.PeutJouer(cartesJouees.Last()))
                     {
                         Console.WriteLine("Vous êtes obligé(e) de jouez la carte pigée");
+                        Console.WriteLine("Appuyez sur une touche pour continuer");
+                        Console.ReadKey();
                         cartePigee.Jouer(this);
                         joueurs[tour].Rejouer(this, cartePigee);
                     }
@@ -97,19 +101,28 @@ namespace ProjetUNO
                     {
                         Console.WriteLine("Vous ne pouvez pas jouer la carte pigée, vous passez votre tour");
                         joueurs[tour].Piger(cartePigee);
+                        Console.WriteLine("Appuyez sur une touche pour continuer");
+                        Console.ReadKey();
                     }
+                    
                 }
                 else
                 {
                     joueurs[tour].Jouer(this, cartesJouees.Last());
 
-                    if(joueurs[tour].GetNombreDeCartes() == 0) break;
+                    if (joueurs[tour].GetNombreDeCartes() == 0)
+                    {
+                        break;
+                    }
                 }
 
                 tour = GetProchainTour();
 
                 Console.Clear();
             }
+
+            Console.Clear();
+            Console.WriteLine($"{joueurs[tour].nom} gagne!");
         }
 
         //Fonction qui retourne l'index du prochain joueur
@@ -126,6 +139,24 @@ namespace ProjetUNO
         //Fonction qui melange le paquet de cartes avec un Random fait sur mesure
         private void MelangerPaquet()
         {
+            // on ne gère pas l'exception si il n'y a plus de cartes du tout a piger
+            // si cela arrive (si c'est meme possible!) c'est un miracle de jésus
+            if (paquetDeCartes.Count == 0)
+            {
+                Carte carte = cartesJouees.Last();
+
+                cartesJouees.RemoveAt(cartesJouees.Count - 1);
+                paquetDeCartes = cartesJouees;
+                cartesJouees.Clear();
+                cartesJouees.Add(carte);
+
+                if (cartesJouees.Count != 1)
+                {
+                    Console.WriteLine("ERROR");
+                }
+            }
+
+            
             Random rand = new Random();
                     
             for(int j = 0; j < paquetDeCartes.Count; j++)
@@ -138,8 +169,8 @@ namespace ProjetUNO
             }
         }
 
-        //Fonction qui cr��e les joueurs et demande leur nom
-        public void CreerJoueurs()
+        //Fonction qui créée les joueurs et demande leur nom
+        private void CreerJoueurs()
         {
             int nombreJoueurs = 3;
 
@@ -160,13 +191,15 @@ namespace ProjetUNO
                 }
                 joueurs.Add(new Joueur(nomJoueurs));
             }
+            Console.Clear();
         }
 
         //Fonction qui inverse le sens du tour
         public void InverserTour()
         {
             sensDuTour = -sensDuTour;
-            Console.WriteLine("Le tour est invers�. Appuyer sur une touche pour continuer");
+            Console.Clear();
+            Console.WriteLine("Le tour est inversé. Appuyer sur une touche pour continuer");
             Console.ReadKey();
         }
 
