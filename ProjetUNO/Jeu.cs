@@ -26,7 +26,7 @@ namespace ProjetUNO
         {
             tour = GetProchainTour();
             Console.Clear();
-            Console.WriteLine($" Le tour de {joueurs[GetProchainTour()].nom} est bloqué. Appuyez sur une touche pour continuer");
+            Console.WriteLine($" Le joueur {joueurs[tour].nom} passe son tour. Appuyez sur une touche pour continuer");
             Console.ReadKey();
         }
 
@@ -75,6 +75,8 @@ namespace ProjetUNO
 
                     Console.WriteLine();
                 }
+
+                Console.WriteLine();
 
                 Console.WriteLine($"C'est le tour de {joueurs[tour].nom}\n");
 
