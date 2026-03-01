@@ -33,7 +33,7 @@ namespace ProjetUNO
 
             Console.WriteLine();
             Console.WriteLine("--> Il faut écrire la couleur en premier et le chiffre ou l'action en deuxième.");
-            Console.WriteLine("EX: 'V+2': faire piger 2 cartes qui est vert, 'BCSD': changer de sens est bleu, etc.");
+            Console.WriteLine("EX: 'V+2': faire piger 2 cartes qui est vert, 'BCDS': changer de sens est bleu, etc.");
             Console.WriteLine();
 
             Console.WriteLine("Appuyer sur un bouton pour débuter la partie !");
